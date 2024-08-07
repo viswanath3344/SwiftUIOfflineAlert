@@ -46,7 +46,7 @@ struct OfflineModifier <T: NetworkMonitorService> : ViewModifier{
 
 extension View {
     func offlineAlert() -> some View {
-        self.modifier(OfflineModifier<AnotherNetworkMonitor>())
+        self.modifier(OfflineModifier<NetworkMonitor>())
     }
 }
 

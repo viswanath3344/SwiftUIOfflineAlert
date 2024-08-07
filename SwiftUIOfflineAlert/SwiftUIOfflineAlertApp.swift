@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct SwiftUIOfflineAlertApp: App {
-    @StateObject var networkMonitor = AnotherNetworkMonitor()
+    @StateObject var networkMonitor = NetworkMonitor()
     var body: some Scene {
         WindowGroup {
             ContentView()
