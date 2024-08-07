@@ -14,6 +14,7 @@
 		3FF62B1D2C63464B004EE87D /* SwiftUIOfflineAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF62B1C2C63464B004EE87D /* SwiftUIOfflineAlertTests.swift */; };
 		3FF62B272C63464B004EE87D /* SwiftUIOfflineAlertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF62B262C63464B004EE87D /* SwiftUIOfflineAlertUITests.swift */; };
 		3FF62B292C63464B004EE87D /* SwiftUIOfflineAlertUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF62B282C63464B004EE87D /* SwiftUIOfflineAlertUITestsLaunchTests.swift */; };
+		3FF62B362C63467E004EE87D /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF62B352C63467E004EE87D /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		3FF62B222C63464B004EE87D /* SwiftUIOfflineAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIOfflineAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF62B262C63464B004EE87D /* SwiftUIOfflineAlertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIOfflineAlertUITests.swift; sourceTree = "<group>"; };
 		3FF62B282C63464B004EE87D /* SwiftUIOfflineAlertUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIOfflineAlertUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3FF62B352C63467E004EE87D /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				3FF62B0D2C634641004EE87D /* ContentView.swift */,
 				3FF62B0F2C634649004EE87D /* Assets.xcassets */,
 				3FF62B112C634649004EE87D /* Preview Content */,
+				3FF62B352C63467E004EE87D /* NetworkMonitor.swift */,
 			);
 			path = SwiftUIOfflineAlert;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FF62B0E2C634641004EE87D /* ContentView.swift in Sources */,
+				3FF62B362C63467E004EE87D /* NetworkMonitor.swift in Sources */,
 				3FF62B0C2C634641004EE87D /* SwiftUIOfflineAlertApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SwiftUIOfflineAlertApp: App {
+    @ObservedObject var networkMonitor = NetworkMonitor()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(networkMonitor)
         }
     }
 }
