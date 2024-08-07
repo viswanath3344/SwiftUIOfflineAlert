@@ -24,7 +24,6 @@ class NetworkMonitor: NetworkMonitorService {
     init() {
         networkMonitor.pathUpdateHandler = { [weak self] path in
             guard let self else { return }
-            print(path.status)
             self.setNetworkConnection(path.status == .satisfied)
         }
         
