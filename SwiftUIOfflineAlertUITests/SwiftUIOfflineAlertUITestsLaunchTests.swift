@@ -2,7 +2,7 @@
 //  SwiftUIOfflineAlertUITestsLaunchTests.swift
 //  SwiftUIOfflineAlertUITests
 //
-//  Created by Ponthota, Viswanath Reddy (Cognizant) on 07/08/24.
+//  Created by Ponthota, Viswanath Reddy on 07/08/24.
 //
 
 import XCTest

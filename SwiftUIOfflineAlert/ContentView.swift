@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  SwiftUIOfflineAlert
 //
-//  Created by Ponthota, Viswanath Reddy (Cognizant) on 07/08/24.
+//  Created by Ponthota, Viswanath Reddy on 07/08/24.
 //
 
 import SwiftUI
@@ -16,13 +16,12 @@ struct ContentView: View {
             }
         }
         .offlineAlert()
-        //.modifier(offlineModifier())network.slash
     }
 }
 
-
-struct offlineModifier : ViewModifier {
-    @EnvironmentObject var networkMonitor: NetworkMonitor
+/// Allowing for any Generic NetworkMonitorService protocol implemented service.
+struct OfflineModifier <T: NetworkMonitorService> : ViewModifier{
+    @EnvironmentObject var networkMonitor: T
     func body(content: Content) -> some View {
         ZStack {
             content
@@ -47,7 +46,7 @@ struct offlineModifier : ViewModifier {
 
 extension View {
     func offlineAlert() -> some View {
-        self.modifier(offlineModifier())
+        self.modifier(OfflineModifier<AnotherNetworkMonitor>())
     }
 }
 
